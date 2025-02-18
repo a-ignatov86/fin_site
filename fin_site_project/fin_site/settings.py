@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'fin_site.urls'
+ROOT_URLCONF = 'fin_site.urls'  # где находится список URL
 
 TEMPLATES = [
     {
