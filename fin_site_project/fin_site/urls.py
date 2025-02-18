@@ -17,11 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from helloapp.views  import index_helloapp, about_page, index_check   # импортируем написанную функцию для открытия индекса из views
+from helloapp.views  import index_helloapp, about_page, index_check,  index_copy   # импортируем написанную функцию для открытия индекса из views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_helloapp),   # вызываем view def index_helloapp
     path('about/', about_page), 
     path('check/', index_check), 
+    path('copy/', index_copy), 
 ]

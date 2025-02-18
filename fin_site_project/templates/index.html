@@ -1,10 +1,15 @@
 <!doctype html>
 	<head>
-		<title>Portfolio</title>
+		<title> {% block title %}Portfolio {% endblock %}</title> <!-- Будет динамично меняться на разных страницах-шаблонах--> 
   		<meta charset="utf-8">
 		<link rel="stylesheet" href="1.css">
 	</head>
 	<body>
+	
+	<!-- Будет динамично меняться на разных страницах-шаблонах 	 --> 
+		{% block content %}	<h1>For Home <br>	{% include "layout.html" %}</h1>	{% endblock %}
+		{% include "layout.html" %}
+
 		<h1>Uncle Drew</h1>
 		<h2> Tutor of Web design</h2>
 		<section>
@@ -20,6 +25,6 @@
 			<h2>More</h2>
 			<ul>Sport</ul>
 		</section>
-
+		{% include "layout.html" %}
 	</body>
 </html>

@@ -8,5 +8,8 @@ def index_helloapp(request):  #http reqest На вход
 def about_page(request):
     return render(request, 'about_employ.html')
 
+def index_copy(request):
+    return render(request, 'index copy.html')
+
 def index_check(request):
     return HttpResponse('<h4>CHECK!!!</h4>')
